@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  awscli:
+    image: awscli:0.1
+    container_name: awscli
+    volumes:
+      - /home/daniel/.ssh:/home/awscli/.ssh
+    environment:
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-aw8io3lv4bny5tiruhvtserivdh}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-iaw476v5btyugf984iv65byt}
+
