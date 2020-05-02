@@ -24,6 +24,10 @@ $ sudo docker build -t awscli:0.1 .
 
 To use some of the features of `awscli` and `awsebcli` I recommend that you create a volume that points your local SSH keys to the `/home/awscli/.ssh` folder of the container. This is considered in the docker-compose as well as in the command to execute using only the docker.
 
+### Elastic Beanstalk configuration
+
+If you want to keep the configuration of an **Elastic Beanstalk** application, I recommend that you also create a volume for a local folder where the application settings will be saved.
+
 ### Environment Variables
 
 | Name                  | Default   | Description                                                  |
@@ -42,6 +46,7 @@ $ sudo docker run \
     -e AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY> \
     -e AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_KEY> \
     -v /path/to/directory:/home/awscli/.ssh \
+    -v /path/to/directory:/home/awscli/eb-apps/my-app \
     awscli:0.1 \
     zsh
 ```
