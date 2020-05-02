@@ -7,6 +7,7 @@ services:
     container_name: awscli
     volumes:
       - /home/daniel/.ssh:/home/awscli/.ssh
+      - /home/daniel/my-eb-app:/home/awscli/eb-apps/my-app
     environment:
       AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-aw8io3lv4bny5tiruhvtserivdh}
