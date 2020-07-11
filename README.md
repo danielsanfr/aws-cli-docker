@@ -1,6 +1,6 @@
 # AWS CLI Docker
 
-![GitHub](https://img.shields.io/github/license/danielsanfr/aws-cli-docker?color=light-green&label=%20&logo=open-source-initiative&logoColor=white) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/danielsanfr/aws-cli-docker?sort=semver)
+![GitHub](https://img.shields.io/github/license/danielsanfr/aws-cli-docker?logo=open-source-initiative&logoColor=white) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/danielsanfr/aws-cli-docker?sort=semver)
 
 A small `Dockerfile` and `docker-compose.yml` with `awscli` and `awsebcli`. My main use is on the Raspberry Pi.
 
